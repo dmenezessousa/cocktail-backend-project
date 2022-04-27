@@ -35,7 +35,7 @@ app.use(passport.initialize());
 passport.use("jwt-user",jwtStrategyCheck);
 
 
-app.use('/api', indexRouter);
+app.use('/', indexRouter);
 app.use('/api/users', usersRouter);
 app.use('/api/users/cocktail',cocktail)
 
